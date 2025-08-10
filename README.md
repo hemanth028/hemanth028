@@ -1,16 +1,33 @@
-## Hi there 👋
+# Hi there 👋, Myself HEMANTH S
 
-<!--
-**hemanth028/hemanth028** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**RTL Design and Verification Engineer , India!**
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 👨‍💻 About Me
+- 🎯 RTL Design and Verification Enthusiast  
+- 📚 Bachelor's in Electronics and Communication Engineering *(2023–2027*)*  
+- 🏫 Sri sivasubramaniya nadar college of engineering (SSN) 
+
+---
+
+## 🛠 Skills
+- **RTL Design:** Verilog, SystemVerilog
+- **Programming:** C, Python  
+
+
+
+---
+
+## 🎯 Fields of Interest
+- VLSI  
+- RTL Design and Verification  
+--
+
+
+
+## 📫 Contact
+- 📧 Email: **hemanth2310772@ssn.edu.in**  
+- 📧 Email: **hemanth.s28925@gmail.com**
+
+---
