@@ -13,7 +13,7 @@
 
 ## 🛠 Skills
 - **RTL Design:** Verilog, SystemVerilog
-- **Programming:** C, Python  
+- **Programming:** C++, Python  
 
 
 
