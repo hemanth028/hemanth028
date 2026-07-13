@@ -18,38 +18,86 @@
 
 ---
 
-### 🧠 `whoami`
+### 🧠 `about ME`
 
 ```verilog
 module hemanth_s #(
-    parameter GRAD_YEAR   = 2027,
-    parameter SPEEDUP_16X = 0        // real number below, no rounding up
-) (
-    input  logic        clk_curiosity,
-    input  logic        debug_persistence,
-    output logic [4:0]  ai_rank,          // 5 = All India Rank, eYantra Robotics
-    output logic [3:0]  speedup_factor,   // 13x on the Kalman Filter accelerator
-    output logic         hready,           // AHB handshake, always respected
-    output logic         chip_that_works
+
+    parameter string NAME        = "Hemanth S",
+    parameter string ROLE        = "RTL Design & Verification Engineer",
+    parameter string EDUCATION   = "B.E. Electronics & Communication Engineering",
+    parameter string COLLEGE     = "SSN College of Engineering",
+    parameter int    GRAD_YEAR   = 2027,
+    parameter string INTERESTS   = "FPGA,verification,COA...... ",
+    parameter string PHILOSOPHY  = "Learn -> Design -> Verify -> Debug -> Repeat"
+
+)(
+    input  logic clk,
+    input  logic rst_n,
+
+    input  logic ready_to_design,
+    input  logic bug_found,
+    input  logic simulation_passed,
+    input  logic root_cause_found
+
 );
 
-    // ECE undergrad @ SSN College of Engineering, Chennai (2023 - 2027)
-    // ASIC/FPGA Design Verification Engineer-in-training
-    // e-YSIP'26 @ e-Yantra, IIT Bombay:
-    //   -> co-designed an FPGA SoC: ARM host + RV32I soft controller
-    //      + custom fixed-point Kalman Filter accelerator over AXI DMA/Stream
-    //   -> offloaded matrix math from software to RTL -> 13x speedup,
-    //      verified numerical accuracy preserved (not just "looks close enough")
-    // Believes 90% of "hardware bugs" are actually testbench bugs
+    typedef enum logic [1:0] {
+        LEARN,
+        DESIGN,
+        VERIFY,
+        DEBUG
+    } state_t;
 
-    assign ai_rank        = 5'd5;
-    assign speedup_factor = 4'd13;
+    state_t state, next_state;
 
-    always_ff @(posedge clk_curiosity) begin
-        if (debug_persistence)
-            chip_that_works <= 1'b1;   // eventually. always eventually.
+    //==================================================
+    // State Register
+    //==================================================
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            state <= LEARN;
         else
-            chip_that_works <= 1'bx;   // unknown state, just like my sleep schedule
+            state <= next_state;
+    end
+
+    //==================================================
+    // Next-State Logic
+    //==================================================
+    always_comb begin
+        next_state = state;
+
+        unique case (state)
+
+            LEARN: begin
+                if (ready_to_design)
+                    next_state = DESIGN;
+            end
+
+            DESIGN: begin
+                if (bug_found)
+                    next_state = DEBUG;
+                else
+                    next_state = VERIFY;
+            end
+
+            VERIFY: begin
+                if (simulation_passed)
+                    next_state = LEARN;
+                else
+                    next_state = DEBUG;
+            end
+
+            DEBUG: begin
+                if (root_cause_found)
+                    next_state = VERIFY;
+            end
+
+            default: begin
+                next_state = LEARN;
+            end
+
+        endcase
     end
 
 endmodule
