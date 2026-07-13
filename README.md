@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=600&lines=RTL+Design+%26+Verification+Engineer;SoC+Architect+%26+FPGA+Developer;SystemVerilog+%2F+UVM+Enthusiast;always(%40posedge+clk)+build_something_cool();" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=650&lines=ASIC%2FFPGA+Design+Verification+Engineer;SystemVerilog+%2B+UVM+%7C+Coverage-Driven+Verification;RTL+Design+%7C+AMBA+%7C+CDC+%7C+RISC-V;always(%40posedge+clk)+chase_coverage_closure();" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -21,21 +21,35 @@
 ### 🧠 `whoami`
 
 ```verilog
-module hemanth_s (
-    input  logic        curiosity,
-    input  logic [31:0] caffeine_level,
+module hemanth_s #(
+    parameter GRAD_YEAR   = 2027,
+    parameter SPEEDUP_16X = 0        // real number below, no rounding up
+) (
+    input  logic        clk_curiosity,
+    input  logic        debug_persistence,
+    output logic [4:0]  ai_rank,          // 5 = All India Rank, eYantra Robotics
+    output logic [3:0]  speedup_factor,   // 13x on the Kalman Filter accelerator
+    output logic         hready,           // AHB handshake, always respected
     output logic         chip_that_works
 );
 
-    // ECE undergrad @ SSN College of Engineering, Class of 2027
-    // Ex-Research Intern @ e-Yantra, IIT Bombay
-    // Building deterministic hardware in a non-deterministic world ⚡
+    // ECE undergrad @ SSN College of Engineering, Chennai (2023 - 2027)
+    // ASIC/FPGA Design Verification Engineer-in-training
+    // e-YSIP'26 @ e-Yantra, IIT Bombay:
+    //   -> co-designed an FPGA SoC: ARM host + RV32I soft controller
+    //      + custom fixed-point Kalman Filter accelerator over AXI DMA/Stream
+    //   -> offloaded matrix math from software to RTL -> 13x speedup,
+    //      verified numerical accuracy preserved (not just "looks close enough")
+    // Believes 90% of "hardware bugs" are actually testbench bugs
 
-    always_ff @(posedge curiosity) begin
-        if (caffeine_level > 8'hFF)
-            chip_that_works <= 1'b1;
+    assign ai_rank        = 5'd5;
+    assign speedup_factor = 4'd13;
+
+    always_ff @(posedge clk_curiosity) begin
+        if (debug_persistence)
+            chip_that_works <= 1'b1;   // eventually. always eventually.
         else
-            chip_that_works <= chip_that_works; // still debugging...
+            chip_that_works <= 1'bx;   // unknown state, just like my sleep schedule
     end
 
 endmodule
@@ -48,14 +62,45 @@ endmodule
 <table align="center" border="1" cellpadding="12">
   <tr>
     <td align="center" width="50%">
-      <h3>🔬 Research Intern</h3>
-      <p><b>e-Yantra, IIT Bombay</b></p>
-      <p>Co-designed a heterogeneous FPGA SoC and a custom Kalman Filter hardware accelerator — because software Kalman filters felt too easy.</p>
+      <h3>🔬 e-YSIP 2026, IIT Bombay</h3>
+      <p><b>RISC-V SoC & Kalman Filter Accelerator</b></p>
+      <p>Co-designed an FPGA SoC fusing an ARM host, an RV32I soft controller, and a custom fixed-point Kalman Filter datapath — offloading matrix ops from software to RTL for a <b>13× execution speedup</b> with verified numerical accuracy.</p>
     </td>
     <td align="center" width="50%">
       <h3>🤖 All India Rank 5</h3>
       <p><b>eYantra Robotics Competition</b></p>
-      <p>National AIR 5 in an FPGA-based robotics and mechanical arm control challenge, taken down to the wire in Verilog.</p>
+      <p>Designed an RTL maze-solving controller on a DE0-Nano FPGA, fusing multi-sensor feedback with mechanical-arm control — optimized real-time sensor-motor coordination to place <b>5th nationally</b>.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## ⚙️ Featured Projects
+
+<table align="center" border="1" cellpadding="12">
+  <tr>
+    <td width="50%">
+      <h4>🔗 AMBA AHB Master Controller</h4>
+      <p><i>Verilog, SystemVerilog</i></p>
+      <p>Fully configurable AHB master supporting single, INCR (4/8/16), and WRAP (4/8/16) burst transfers with aligned address generation. Verified protocol compliance via a custom SV testbench — wait-state insertion, wrapping-boundary checks, HRESP error handling.</p>
+    </td>
+    <td width="50%">
+      <h4>🧮 RV32I 5-Stage Pipelined Processor</h4>
+      <p><i>Verilog, Xilinx Vivado</i></p>
+      <p>Synthesizable 5-stage pipelined RV32I core with custom forwarding and hazard-detection units resolving RAW, load-use, and control hazards. Closed timing at <b>100 MHz</b> in Vivado; correctness validated with targeted assembly tests.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h4>🔄 Asynchronous FIFO (CDC)</h4>
+      <p><i>Verilog, SystemVerilog, UVM</i></p>
+      <p>Async FIFO with independent read/write clocks and gray-code synchronization logic for safe clock-domain crossing. SV testbench with randomized stimulus, assertions, and functional coverage — <b>zero data loss</b> across domains.</p>
+    </td>
+    <td width="50%">
+      <h4>🧭 FPGA Maze-Solver Bot</h4>
+      <p><i>Verilog, DE0-Nano FPGA</i></p>
+      <p>RTL maze-solving controller integrating multi-sensor feedback and GPIO-driven mechanical-arm control. Generic solving algorithm + tuned sensor-motor coordination won <b>AIR 5</b> nationally.</p>
     </td>
   </tr>
 </table>
@@ -69,14 +114,27 @@ endmodule
   <img src="https://img.shields.io/badge/SystemVerilog-005A9C?style=for-the-badge&logo=intel&logoColor=white" alt="SystemVerilog" />
   <img src="https://img.shields.io/badge/Verilog-F15A24?style=for-the-badge&logo=cpu&logoColor=white" alt="Verilog" />
   <img src="https://img.shields.io/badge/UVM-6E40C9?style=for-the-badge&logo=checkmarx&logoColor=white" alt="UVM" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+</p>
+
+### 🧩 Core Methodologies & Architectures
+<p align="left">
+  <img src="https://img.shields.io/badge/Coverage--Driven%20Verification-2E8B57?style=for-the-badge" alt="CDV" />
+  <img src="https://img.shields.io/badge/Clock%20Domain%20Crossing-8A2BE2?style=for-the-badge" alt="CDC" />
+  <img src="https://img.shields.io/badge/DFT-FF8C00?style=for-the-badge" alt="DFT" />
+  <img src="https://img.shields.io/badge/RISC--V-283272?style=for-the-badge&logo=riscv&logoColor=white" alt="RISC-V" />
+  <img src="https://img.shields.io/badge/AMBA%20(AXI%2FAHB%2FAPB)-CC0000?style=for-the-badge" alt="AMBA" />
+  <img src="https://img.shields.io/badge/UART-444444?style=for-the-badge" alt="UART" />
 </p>
 
 ### 🔧 EDA & Simulation Tools
 <p align="left">
   <img src="https://img.shields.io/badge/Xilinx%20Vivado-FF6B6B?style=for-the-badge&logo=amd&logoColor=white" alt="Vivado" />
+  <img src="https://img.shields.io/badge/Vitis-00A3E0?style=for-the-badge&logo=amd&logoColor=white" alt="Vitis" />
   <img src="https://img.shields.io/badge/QuestaSim-002E5D?style=for-the-badge&logo=siemens&logoColor=white" alt="QuestaSim" />
+  <img src="https://img.shields.io/badge/ModelSim-002E5D?style=for-the-badge&logo=siemens&logoColor=white" alt="ModelSim" />
   <img src="https://img.shields.io/badge/Intel%20Quartus-0071C5?style=for-the-badge&logo=intel&logoColor=white" alt="Quartus" />
   <img src="https://img.shields.io/badge/LTspice-9B5DE5?style=for-the-badge&logo=spice&logoColor=white" alt="LTspice" />
 </p>
@@ -84,7 +142,7 @@ endmodule
 ### ⚙ Developer Environment
 <p align="left">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
+  <img src="https://img.shields.io/badge/Vim%2FGVim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
 </p>
 
@@ -109,18 +167,13 @@ endmodule
 
 ## 🎮 A Little Chaos, Professionally Contained
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemanth028&theme=dark&hide_border=true&fire=00D2FF" alt="fun stat" width="1" />
-</p>
-
-> **Fun fact:** I debug hardware the way most people debug life — one `$display` statement at a time, questioning every assumption, and blaming the testbench first.
+> **Fun fact:** I debug hardware the way I debug everything else — one `$display` statement at a time, questioning every assumption, and blaming the testbench first.
 
 ```
  ______________________________________
-< My code doesn't have bugs. It has     >
-< undocumented features at the RTL      >
-< level, and I intend to keep it that   >
-< way until tapeout.                    >
+< HREADY was low the whole time.        >
+< I checked everything except the       >
+< one signal that mattered.             >
  --------------------------------------
         \   ^__^
          \  (oo)\_______
@@ -135,6 +188,7 @@ endmodule
 
 * **Email:** [hemanth.s28925@gmail.com](mailto:hemanth.s28925@gmail.com)
 * **LinkedIn:** [Hemanth S](https://www.linkedin.com/in/hemanth-s-775618290/)
+* **HDLBits:** Add your profile link here
 * **Institution:** SSN College of Engineering (ECE, Class of 2027)
 
 <p align="center">
