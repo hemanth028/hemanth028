@@ -19,11 +19,7 @@
       <p><b>e-Yantra, IIT Bombay</b></p>
       <p>Co-designed a heterogeneous FPGA SoC and custom Kalman Filter hardware accelerator.</p>
     </td>
-    <td align="center" width="33%">
-      <h3>🚀 13× Performance</h3>
-      <p><b>HW/SW Co-Design</b></p>
-      <p>Delivered a 13× execution speedup by offloading matrix math to custom RTL datapaths.</p>
-    </td>
+   
     <td align="center" width="33%">
       <h3>🤖 All India Rank 5</h3>
       <p><b>eYantra Robotics</b></p>
@@ -40,7 +36,6 @@
 <p align="left">
   <img src="https://img.shields.io/badge/SystemVerilog-005A9C?style=for-the-badge&logo=intel&logoColor=white" alt="SystemVerilog" />
   <img src="https://img.shields.io/badge/Verilog-F15A24?style=for-the-badge&logo=cpu&logoColor=white" alt="Verilog" />
-  <img src="https://img.shields.io/badge/UVM-007ACC?style=for-the-badge&logo=microchip&logoColor=white" alt="UVM" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </p>
@@ -61,23 +56,7 @@
 
 ---
 
-## 📁 Silicon Portfolio (Featured Works)
 
-### ⚡ [RV32I 5-Stage Pipelined RISC-V Processor](https://github.com/hemanth028/riscv-pipelined-processor)
-* **What it is:** A fully synthesizable, hazard-resilient 32-bit RISC-V CPU.
-* **The Crux:** Handles RAW hazards with full forwarding (MEM→EX, WB→EX) and load-use/control hazards via pipeline stalls and flushes.
-* **Metric:** Closed timing and successfully synthesized at a **100 MHz target clock frequency** in Vivado.
-
-### 🔄 [Asynchronous FIFO Design & Verification](https://github.com/hemanth028)
-* **What it is:** A robust CDC-safe FIFO architecture designed in Verilog.
-* **The Crux:** Employs Gray coding, 2-stage synchronizers, and CDC-safe pointer generation to prevent metastability.
-* **Verification:** SystemVerilog testbench featuring random stimulus, SVA assertions, and functional coverage.
-
-### 🧠 [Memory Module Verification](https://github.com/hemanth028)
-* **What it is:** An enterprise-style functional verification of a parameterized memory controller.
-* **The Crux:** Built a complete UVM environment utilizing drivers, monitors, scoreboards, and coverage collectors to achieve 100% coverage closure.
-
----
 
 ## 📈 GitHub Statistics
 <p align="center">
