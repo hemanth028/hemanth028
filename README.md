@@ -1,41 +1,74 @@
-# Hi there! I'm Hemanth S 👋 
+<h1 align="center">
+  Hi, I'm Hemanth S 👋⚡
+</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=500&lines=RTL+Design+%26+Verification;SoC+Architect+%26+FPGA+Dev;SystemVerilog+%26+UVM+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=600&lines=RTL+Design+%26+Verification+Engineer;SoC+Architect+%26+FPGA+Developer;SystemVerilog+%2F+UVM+Enthusiast;always(%40posedge+clk)+build_something_cool();" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/hemanth-s-775618290/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:hemanth.s28925@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <img src="https://komarev.com/ghpvc/?username=hemanth028&style=for-the-badge&color=00D2FF" alt="Profile views" />
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D2FF,100:005A9C&height=120&section=header" width="100%" />
 </p>
 
 ---
 
+### 🧠 `whoami`
+
+```verilog
+module hemanth_s (
+    input  logic        curiosity,
+    input  logic [31:0] caffeine_level,
+    output logic         chip_that_works
+);
+
+    // ECE undergrad @ SSN College of Engineering, Class of 2027
+    // Ex-Research Intern @ e-Yantra, IIT Bombay
+    // Building deterministic hardware in a non-deterministic world ⚡
+
+    always_ff @(posedge curiosity) begin
+        if (caffeine_level > 8'hFF)
+            chip_that_works <= 1'b1;
+        else
+            chip_that_works <= chip_that_works; // still debugging...
+    end
+
+endmodule
+```
+
+---
+
 ## 🏆 Hall of Fame & Major Milestones
-<table align="center" border="1" cellpadding="10">
+
+<table align="center" border="1" cellpadding="12">
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="50%">
       <h3>🔬 Research Intern</h3>
       <p><b>e-Yantra, IIT Bombay</b></p>
-      <p>Co-designed a heterogeneous FPGA SoC and custom Kalman Filter hardware accelerator.</p>
+      <p>Co-designed a heterogeneous FPGA SoC and a custom Kalman Filter hardware accelerator — because software Kalman filters felt too easy.</p>
     </td>
-   
-    <td align="center" width="33%">
+    <td align="center" width="50%">
       <h3>🤖 All India Rank 5</h3>
-      <p><b>eYantra Robotics</b></p>
-      <p>Secured national AIR 5 in a prestigious FPGA-based robotics and mechanical arm control challenge.</p>
+      <p><b>eYantra Robotics Competition</b></p>
+      <p>National AIR 5 in an FPGA-based robotics and mechanical arm control challenge, taken down to the wire in Verilog.</p>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🛠 Tech Stack & Hardware Tools
+## 🛠 Tech Stack & Hardware Arsenal
 
 ### 💻 Languages & Methodologies
 <p align="left">
   <img src="https://img.shields.io/badge/SystemVerilog-005A9C?style=for-the-badge&logo=intel&logoColor=white" alt="SystemVerilog" />
   <img src="https://img.shields.io/badge/Verilog-F15A24?style=for-the-badge&logo=cpu&logoColor=white" alt="Verilog" />
+  <img src="https://img.shields.io/badge/UVM-6E40C9?style=for-the-badge&logo=checkmarx&logoColor=white" alt="UVM" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </p>
@@ -52,25 +85,62 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
 </p>
 
 ---
 
-
-
 ## 📈 GitHub Statistics
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=hemanth028&show_icons=true&theme=radical&hide_border=true" alt="Hemanth's GitHub stats" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hemanth028&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemanth028&theme=radical&hide_border=true" alt="GitHub Streak" width="60%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hemanth028&theme=react-dark&hide_border=true" alt="Activity Graph" width="90%" />
+</p>
+
+---
+
+## 🎮 A Little Chaos, Professionally Contained
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemanth028&theme=dark&hide_border=true&fire=00D2FF" alt="fun stat" width="1" />
+</p>
+
+> **Fun fact:** I debug hardware the way most people debug life — one `$display` statement at a time, questioning every assumption, and blaming the testbench first.
+
+```
+ ______________________________________
+< My code doesn't have bugs. It has     >
+< undocumented features at the RTL      >
+< level, and I intend to keep it that   >
+< way until tapeout.                    >
+ --------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
 ---
 
 ## 📫 Let's Connect!
+
 * **Email:** [hemanth.s28925@gmail.com](mailto:hemanth.s28925@gmail.com)
-* **LinkedIn:** [Hemanth S on LinkedIn](https://www.linkedin.com/in/hemanth-s-775618290/)
+* **LinkedIn:** [Hemanth S](https://www.linkedin.com/in/hemanth-s-775618290/)
 * **Institution:** SSN College of Engineering (ECE, Class of 2027)
 
 <p align="center">
   <i>"Writing deterministic hardware in a non-deterministic world."</i> ⚡
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:005A9C,100:00D2FF&height=100&section=footer" width="100%" />
 </p>
