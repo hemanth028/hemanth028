@@ -74,38 +74,7 @@ endmodule
   </tr>
 </table>
 
----
 
-## ⚙️ Featured Projects
-
-<table align="center" border="1" cellpadding="12">
-  <tr>
-    <td width="50%">
-      <h4>🔗 AMBA AHB Master Controller</h4>
-      <p><i>Verilog, SystemVerilog</i></p>
-      <p>Fully configurable AHB master supporting single, INCR (4/8/16), and WRAP (4/8/16) burst transfers with aligned address generation. Verified protocol compliance via a custom SV testbench — wait-state insertion, wrapping-boundary checks, HRESP error handling.</p>
-    </td>
-    <td width="50%">
-      <h4>🧮 RV32I 5-Stage Pipelined Processor</h4>
-      <p><i>Verilog, Xilinx Vivado</i></p>
-      <p>Synthesizable 5-stage pipelined RV32I core with custom forwarding and hazard-detection units resolving RAW, load-use, and control hazards. Closed timing at <b>100 MHz</b> in Vivado; correctness validated with targeted assembly tests.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4>🔄 Asynchronous FIFO (CDC)</h4>
-      <p><i>Verilog, SystemVerilog, UVM</i></p>
-      <p>Async FIFO with independent read/write clocks and gray-code synchronization logic for safe clock-domain crossing. SV testbench with randomized stimulus, assertions, and functional coverage — <b>zero data loss</b> across domains.</p>
-    </td>
-    <td width="50%">
-      <h4>🧭 FPGA Maze-Solver Bot</h4>
-      <p><i>Verilog, DE0-Nano FPGA</i></p>
-      <p>RTL maze-solving controller integrating multi-sensor feedback and GPIO-driven mechanical-arm control. Generic solving algorithm + tuned sensor-motor coordination won <b>AIR 5</b> nationally.</p>
-    </td>
-  </tr>
-</table>
-
----
 
 ## 🛠 Tech Stack & Hardware Arsenal
 
