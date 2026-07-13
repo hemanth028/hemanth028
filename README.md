@@ -93,7 +93,6 @@ endmodule
   <img src="https://img.shields.io/badge/Clock%20Domain%20Crossing-8A2BE2?style=for-the-badge" alt="CDC" />
   <img src="https://img.shields.io/badge/DFT-FF8C00?style=for-the-badge" alt="DFT" />
   <img src="https://img.shields.io/badge/RISC--V-283272?style=for-the-badge&logo=riscv&logoColor=white" alt="RISC-V" />
-  <img src="https://img.shields.io/badge/AMBA%20(AXI%2FAHB%2FAPB)-CC0000?style=for-the-badge" alt="AMBA" />
   <img src="https://img.shields.io/badge/UART-444444?style=for-the-badge" alt="UART" />
 </p>
 
@@ -111,7 +110,6 @@ endmodule
 <p align="left">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Vim%2FGVim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
 </p>
 
 ---
@@ -131,26 +129,6 @@ endmodule
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=hemanth028&theme=react-dark&hide_border=true" alt="Activity Graph" width="90%" />
 </p>
 
----
-
-## 🎮 A Little Chaos, Professionally Contained
-
-> **Fun fact:** I debug hardware the way I debug everything else — one `$display` statement at a time, questioning every assumption, and blaming the testbench first.
-
-```
- ______________________________________
-< HREADY was low the whole time.        >
-< I checked everything except the       >
-< one signal that mattered.             >
- --------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
-
----
 
 ## 📫 Let's Connect!
 
