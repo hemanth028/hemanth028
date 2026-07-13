@@ -160,30 +160,12 @@ endmodule
   <img src="https://img.shields.io/badge/Vim%2FGVim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
 </p>
 
----
-
-## 📈 GitHub Statistics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hemanth028&show_icons=true&theme=radical&hide_border=true" alt="Hemanth's GitHub stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hemanth028&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hemanth028&theme=radical&hide_border=true" alt="GitHub Streak" width="60%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hemanth028&theme=react-dark&hide_border=true" alt="Activity Graph" width="90%" />
-</p>
-
 
 ## 📫 Let's Connect!
 
 * **Email:** [hemanth.s28925@gmail.com](mailto:hemanth.s28925@gmail.com)
 * **LinkedIn:** [Hemanth S](https://www.linkedin.com/in/hemanth-s-775618290/)
-* **HDLBits:** Add your profile link here
-* **Institution:** SSN College of Engineering (ECE, Class of 2027)
+* **HDLBits:** https://hdlbits.01xz.net/wiki/Special:VlgStats/Me
 
 <p align="center">
   <i>"Writing deterministic hardware in a non-deterministic world."</i> ⚡
