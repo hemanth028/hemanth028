@@ -4,7 +4,7 @@
 
 
 <h1 align="center">
-  Hi, I'm Hemanth S 👋⚡
+  Hi, I'm Hemanth S 👋
 </h1>
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=650&lines=ASIC%2FFPGA+Design+Verification+Engineer;SystemVerilog+%2B+UVM+%7C+Coverage-Driven+Verification;RTL+Design+%7C+AMBA+%7C+CDC+%7C+RISC-V;always(%40posedge+clk)+chase_coverage_closure();" alt="Typing SVG" />
