@@ -22,82 +22,24 @@
 
 ```verilog
 module hemanth_s #(
-
-    parameter string NAME        = "Hemanth S",
-    parameter string ROLE        = "RTL Design & Verification Engineer",
-    parameter string EDUCATION   = "B.E. Electronics & Communication Engineering",
-    parameter string COLLEGE     = "SSN College of Engineering",
-    parameter int    GRAD_YEAR   = 2027,
-    parameter string INTERESTS   = "FPGA,verification,COA...... ",
-    parameter string PHILOSOPHY  = "Learn -> Design -> Verify -> Debug -> Repeat"
-
-)(
-    input  logic clk,
-    input  logic rst_n,
-
-    input  logic ready_to_design,
-    input  logic bug_found,
-    input  logic simulation_passed,
-    input  logic root_cause_found
-
+    parameter string NAME   = "Hemanth S",
+    parameter string ROLE   = "RTL & DV Engineer",
+    parameter string STATUS = "Open to Opportunities"
 );
 
-    typedef enum logic [1:0] {
-        LEARN,
-        DESIGN,
-        VERIFY,
-        DEBUG
-    } state_t;
-
-    state_t state, next_state;
-
-    //==================================================
-    // State Register
-    //==================================================
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
-            state <= LEARN;
-        else
-            state <= next_state;
+    // What I love doing
+    initial begin
+        $display("Hi, I'm %s!", NAME);
+        $display("I design RTL. I verify designs.");
+        $display("I hunt bugs before silicon does.");
     end
 
-    //==================================================
-    // Next-State Logic
-    //==================================================
+    // My natural habitat
     always_comb begin
-        next_state = state;
-
-        unique case (state)
-
-            LEARN: begin
-                if (ready_to_design)
-                    next_state = DESIGN;
-            end
-
-            DESIGN: begin
-                if (bug_found)
-                    next_state = DEBUG;
-                else
-                    next_state = VERIFY;
-            end
-
-            VERIFY: begin
-                if (simulation_passed)
-                    next_state = LEARN;
-                else
-                    next_state = DEBUG;
-            end
-
-            DEBUG: begin
-                if (root_cause_found)
-                    next_state = VERIFY;
-            end
-
-            default: begin
-                next_state = LEARN;
-            end
-
-        endcase
+        stimulate();
+        assert();
+        debug();
+        repeat();
     end
 
 endmodule
