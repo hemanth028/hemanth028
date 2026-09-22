@@ -119,7 +119,6 @@ endmodule
   <img src="https://img.shields.io/badge/AHB-D22B2B?style=for-the-badge" alt="AHB" />
   <img src="https://img.shields.io/badge/APB-D22B2B?style=for-the-badge" alt="APB" />
   <img src="https://img.shields.io/badge/SPI-444444?style=for-the-badge" alt="SPI" />
-  <img src="https://img.shields.io/badge/Wishbone-444444?style=for-the-badge" alt="Wishbone" />
 </p>
 
 ### ⚙ Developer Environment (addition)
