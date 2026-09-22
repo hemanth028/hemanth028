@@ -103,6 +103,29 @@ endmodule
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Vim%2FGVim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
 </p>
+### 🧩 Core Methodologies & Architectures (additions)
+<p align="left">
+  <img src="https://img.shields.io/badge/UVM-2E8B57?style=for-the-badge" alt="UVM" />
+  <img src="https://img.shields.io/badge/SystemVerilog%20Assertions-2E8B57?style=for-the-badge" alt="SVA" />
+  <img src="https://img.shields.io/badge/Functional%20Coverage-2E8B57?style=for-the-badge" alt="Functional Coverage" />
+  <img src="https://img.shields.io/badge/Constrained--Random%20Verification-2E8B57?style=for-the-badge" alt="CRV" />
+  <img src="https://img.shields.io/badge/Assertion--Based%20Verification-8A2BE2?style=for-the-badge" alt="ABV" />
+  <img src="https://img.shields.io/badge/Pipelined%20Processor%20Design-283272?style=for-the-badge" alt="Pipelined Processor" />
+</p>
+
+### 🔌 Protocols & Interfaces
+<p align="left">
+  <img src="https://img.shields.io/badge/AXI4-D22B2B?style=for-the-badge" alt="AXI4" />
+  <img src="https://img.shields.io/badge/AHB-D22B2B?style=for-the-badge" alt="AHB" />
+  <img src="https://img.shields.io/badge/APB-D22B2B?style=for-the-badge" alt="APB" />
+  <img src="https://img.shields.io/badge/SPI-444444?style=for-the-badge" alt="SPI" />
+  <img src="https://img.shields.io/badge/Wishbone-444444?style=for-the-badge" alt="Wishbone" />
+</p>
+
+### ⚙ Developer Environment (addition)
+<p align="left">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+</p>
 
 
 ## 📫 Let's Connect!
