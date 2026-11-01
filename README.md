@@ -20,6 +20,15 @@
 
 ---
 
+## 📫 Let's Connect!
+
+* **Email:** [hemanth.s28925@gmail.com](mailto:hemanth.s28925@gmail.com)
+* **LinkedIn:** [Hemanth S](https://www.linkedin.com/in/hemanth-s-775618290/)
+* **Portfolio:** [hemanth028.github.io](https://hemanth028.github.io/)
+* **HDLBits:** [My HDLBits stats](https://hdlbits.01xz.net/wiki/Special:VlgStats/Me)
+
+---
+
 ### 🧠 `about ME`
 
 ```verilog
@@ -103,6 +112,7 @@ endmodule
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Vim%2FGVim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim" />
 </p>
+
 ### 🧩 Core Methodologies & Architectures (additions)
 <p align="left">
   <img src="https://img.shields.io/badge/UVM-2E8B57?style=for-the-badge" alt="UVM" />
@@ -126,12 +136,6 @@ endmodule
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
 </p>
 
-
-## 📫 Let's Connect!
-
-* **Email:** [hemanth.s28925@gmail.com](mailto:hemanth.s28925@gmail.com)
-* **LinkedIn:** [Hemanth S](https://www.linkedin.com/in/hemanth-s-775618290/)
-* **HDLBits:** https://hdlbits.01xz.net/wiki/Special:VlgStats/Me
 
 <p align="center">
   <i>"Writing deterministic hardware in a non-deterministic world."</i> ⚡
